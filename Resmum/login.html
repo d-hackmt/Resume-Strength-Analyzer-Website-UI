@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+  </head>
+  <body>
+    <header>
+      <h1>Login</h1>
+    </header>
+
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="resume_checker.html">Resume Checker</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="chatbot.html">Chat Bot</a></li>
+      <li><a href="login.html">Login / Sign Up</a></li>
+     </ul>
+    <main>
+      <form action="">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Log In</button>
+      </form>
+      <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </main>
+    <footer>
+      <p>Logged in as: <span id="username-display"></span></p>
+      <button id="logout-button">Log Out</button>
+    </footer>
+    <script src="login.js"></script>
+  </body>
+</html>

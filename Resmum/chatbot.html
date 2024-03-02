@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resume Strength Analyzer</title>
+    <!-- Add the Dialogflow chatbot script -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/loader.js?v=1"></script>
+    <script>
+      // Initialize the Dialogflow chatbot
+      window.dfMessenger = {
+        dfConfig: {
+          botId: '<your-bot-id>',
+          lang: 'en',
+          chatTitle: 'Resume Strength Analyzer',
+          enableAutocomplete: true,
+          widgetHeight: 500,
+          widgetWidth: 350,
+        },
+      };
+    </script>
+        <link rel="stylesheet" type="text/css" href="chatbot.css">
+
+  </head>
+  <body>
+    <header>
+        <h1>Chatbot</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="resume_checker.html">Resume Checker</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="chatbot.html">Chat Bot</a></li>
+                <li><a href="login.html">Login / Sign Up</a></li>
+               </ul>
+        </nav>
+      </header>
+
+    <div class="chatbot-container">
+      <div class="chatbot-header">Resume Strength Analyzer Chatbot</div>
+      <p>Welcome to our Resume Strength Analyzer chatbot. Our chatbot is designed to help you improve your resume by providing you with recommendations on which skills to include based on the job requirements. Our chatbot is trained on our data for the Resume Strength Analyzer project, which uses NLP and deep learning techniques to predict the probability of getting placed, with a focus on tech roles.</p>
+      <div class="chatbot-messages"></div>
+      <div
+      <div class="chatbot-input">
+        <input type="text" placeholder="Type your message here" />
+        <button>Send</button>
+      </div>
+    </div>
+
+    
+    <!-- Add the Dialogflow chatbot widget -->
+    <df-messenger></df-messenger>
+    
+  </body>
+</html>
